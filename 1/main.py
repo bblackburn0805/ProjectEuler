@@ -1,15 +1,16 @@
-# Numbers is all integers from 1 to 999
-# set contains all numbers that are multiples of 3 or 5
+# Brandon Blackburn
+# Euler Problem #2:
+# By considering the terms in the Fibonacci sequence whose values do not exceed four million,
+# find the sum of the even-valued terms.
 
-numbers = range(999)
-sets = []
-sums = 0
+num1 = 1
+num2 = 1
+answer = 2
 
-for x in numbers:
-    if (x % 3 == 0) or (x % 5 == 0):
-        sets.append(x)
+while num1 < 4000000 and num2 < 4000000:
+    temp = num1 + num2
+    answer += temp
+    num1 = num2
+    num2 = temp
 
-for y in sets:
-    sums += y
-
-print(sums)
+print(answer)
