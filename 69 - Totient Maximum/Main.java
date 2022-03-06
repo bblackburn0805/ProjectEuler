@@ -102,7 +102,7 @@ public class Main {
         System.out.println("max n/phi(n) = " + maximum);
         System.out.println("Secs to calculate = " + (System.currentTimeMillis() - timer) / 1000);
         // Interestingly, using boolean [] commonFactors takes 278 seconds.
-        // Using int [] commonFactors takes
+        // Using int [] commonFactors takes 356 seconds.
 
     }//end main
 
